@@ -1,0 +1,247 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="820"
+    viewBox="0 0 1200 820"
+>
+
+<rect
+    width="1200"
+    height="820"
+    rx="24"
+    fill="#0F172A"
+/>
+
+
+<text
+    x="42"
+    y="44"
+    font-size="20"
+    font-weight="700"
+    fill="#FFFFFF"
+>
+Languages
+</text>
+
+
+<circle
+    cx="50"
+    cy="72"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="78"
+    font-size="16"
+    fill="#CBD5E1"
+>
+Java
+</text>
+
+
+<circle
+    cx="50"
+    cy="124"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="130"
+    font-size="16"
+    fill="#CBD5E1"
+>
+TypeScript
+</text>
+
+
+<circle
+    cx="50"
+    cy="176"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="182"
+    font-size="16"
+    fill="#CBD5E1"
+>
+SQL
+</text>
+
+
+<text
+    x="42"
+    y="244"
+    font-size="20"
+    font-weight="700"
+    fill="#FFFFFF"
+>
+Backend
+</text>
+
+
+<circle
+    cx="50"
+    cy="272"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="278"
+    font-size="16"
+    fill="#CBD5E1"
+>
+Spring
+</text>
+
+
+<circle
+    cx="50"
+    cy="324"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="330"
+    font-size="16"
+    fill="#CBD5E1"
+>
+SAP Commerce
+</text>
+
+
+<circle
+    cx="50"
+    cy="376"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="382"
+    font-size="16"
+    fill="#CBD5E1"
+>
+REST APIs
+</text>
+
+
+<text
+    x="42"
+    y="444"
+    font-size="20"
+    font-weight="700"
+    fill="#FFFFFF"
+>
+Data
+</text>
+
+
+<circle
+    cx="50"
+    cy="472"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="478"
+    font-size="16"
+    fill="#CBD5E1"
+>
+MySQL
+</text>
+
+
+<circle
+    cx="50"
+    cy="524"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="530"
+    font-size="16"
+    fill="#CBD5E1"
+>
+PostgreSQL
+</text>
+
+
+<text
+    x="42"
+    y="592"
+    font-size="20"
+    font-weight="700"
+    fill="#FFFFFF"
+>
+Practices
+</text>
+
+
+<circle
+    cx="50"
+    cy="620"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="626"
+    font-size="16"
+    fill="#CBD5E1"
+>
+Clean Code
+</text>
+
+
+<circle
+    cx="50"
+    cy="672"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="678"
+    font-size="16"
+    fill="#CBD5E1"
+>
+DDD
+</text>
+
+
+<circle
+    cx="50"
+    cy="724"
+    r="5"
+    fill="#38BDF8"
+/>
+
+<text
+    x="66"
+    y="730"
+    font-size="16"
+    fill="#CBD5E1"
+>
+SOLID
+</text>
+
+
+</svg>

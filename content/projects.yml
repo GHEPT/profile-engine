@@ -1,0 +1,54 @@
+projects:
+  - id: "profile-engine"
+    name: "Profile Engine"
+    category: "Developer Tools"
+    status: "In Development"
+    featured: true
+
+    description: >
+      Static engine that generates beautiful GitHub profile
+      READMEs from structured YAML content.
+
+    technologies:
+      - "TypeScript"
+      - "Node.js"
+      - "SVG"
+      - "Markdown"
+
+    links:
+      repository: "https://github.com/GHEPT/profile-engine"
+
+  - id: "teologic"
+    name: "Teo Logic"
+    category: "Business Platform"
+    status: "Active"
+    featured: true
+
+    description: >
+      Technology platform focused on helping companies evolve
+      through operational clarity.
+
+    technologies:
+      - "Next.js"
+      - "TypeScript"
+      - "Supabase"
+
+    links:
+      website: "https://teologic.com.br"
+
+  - id: "runtime"
+    name: "Teo Runtime"
+    category: "Automation"
+    status: "In Development"
+    featured: false
+
+    description: >
+      Workflow runtime responsible for orchestration,
+      automation and event processing.
+
+    technologies:
+      - "Node.js"
+      - "Redis"
+      - "TypeScript"
+
+    links: {}

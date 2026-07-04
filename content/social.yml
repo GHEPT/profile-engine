@@ -1,0 +1,38 @@
+title: "Let's Connect"
+
+subtitle: "Find me around the web"
+
+profiles:
+  - id: "github"
+    label: "GitHub"
+    username: "GHEPT"
+    url: "https://github.com/GHEPT"
+    icon: "github"
+    visible: true
+    primary: true
+
+  - id: "linkedin"
+    label: "LinkedIn"
+    username: "Eduardo Teodoro"
+    url: "https://linkedin.com/in/epteodoro"
+    icon: "linkedin"
+    visible: true
+    primary: true
+
+  - id: "website"
+    label: "Website"
+    username: "teologic.com.br"
+    url: "https://teologic.com.br"
+    icon: "globe"
+    visible: true
+    primary: false
+
+settings:
+  openLinksInNewTab: true
+  showIcons: true
+  showLabels: true
+  sortPrimaryFirst: true
+  separator: " • "
+
+footer:
+  message: "Thanks for visiting my profile."

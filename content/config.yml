@@ -1,0 +1,69 @@
+project:
+  name: "Profile Engine"
+  version: "2.0.0"
+  description: "Static GitHub Profile README Generator"
+  author: "Eduardo Teodoro"
+
+paths:
+  assets: "assets"
+  generated: "assets/generated"
+
+  content: "content"
+
+  profile: "content/profile.yml"
+  projects: "content/projects.yml"
+  journey: "content/journey.yml"
+  social: "content/social.yml"
+
+  readme:
+    hero: "content/readme/hero.md"
+    about: "content/readme/about.md"
+    projects: "content/readme/projects.md"
+    github: "content/readme/github.md"
+    footer: "content/readme/footer.md"
+
+  output:
+    readme: "output/README.md"
+
+render:
+  lineBreak: "\n"
+  sectionSpacing: 2
+  trimTrailingWhitespace: true
+  ensureFinalNewline: true
+
+svg:
+  hero:
+    enabled: true
+    output: "assets/generated/hero.svg"
+
+  skills:
+    enabled: true
+    output: "assets/generated/skills.svg"
+
+  timeline:
+    enabled: true
+    output: "assets/generated/timeline.svg"
+
+engine:
+  overwriteOutput: true
+  createDirectories: true
+  failOnMissingContent: true
+  deterministicOutput: true
+  sortProjects: true
+  validateContent: true
+
+markdown:
+  headingStyle: "atx"
+  bullet: "-"
+  emphasis: "*"
+  strong: "**"
+
+features:
+  hero: true
+  about: true
+  projects: true
+  skills: true
+  journey: true
+  github: true
+  contact: true
+  footer: true

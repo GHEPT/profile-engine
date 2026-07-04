@@ -1,0 +1,121 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="180"
+    viewBox="0 0 1200 180"
+>
+
+<rect
+    width="1200"
+    height="180"
+    rx="22"
+    fill="#0F172A"
+/>
+
+
+<line
+    x1="90"
+    y1="90"
+    x2="270"
+    y2="90"
+    stroke="#475569"
+    stroke-width="3"
+/>
+
+<line
+    x1="270"
+    y1="90"
+    x2="450"
+    y2="90"
+    stroke="#475569"
+    stroke-width="3"
+/>
+
+
+
+<circle
+    cx="90"
+    cy="90"
+    r="10"
+    fill="#38BDF8"
+/>
+
+<text
+    x="90"
+    y="60"
+    text-anchor="middle"
+    font-size="14"
+    fill="#FFFFFF"
+>
+2021
+</text>
+
+<text
+    x="90"
+    y="125"
+    text-anchor="middle"
+    font-size="15"
+    font-weight="700"
+    fill="#E2E8F0"
+>
+SAP Commerce Backend Developer
+</text>
+
+<circle
+    cx="270"
+    cy="90"
+    r="10"
+    fill="#38BDF8"
+/>
+
+<text
+    x="270"
+    y="60"
+    text-anchor="middle"
+    font-size="14"
+    fill="#FFFFFF"
+>
+2024
+</text>
+
+<text
+    x="270"
+    y="125"
+    text-anchor="middle"
+    font-size="15"
+    font-weight="700"
+    fill="#E2E8F0"
+>
+Founder
+</text>
+
+<circle
+    cx="450"
+    cy="90"
+    r="10"
+    fill="#38BDF8"
+/>
+
+<text
+    x="450"
+    y="60"
+    text-anchor="middle"
+    font-size="14"
+    fill="#FFFFFF"
+>
+2026
+</text>
+
+<text
+    x="450"
+    y="125"
+    text-anchor="middle"
+    font-size="15"
+    font-weight="700"
+    fill="#E2E8F0"
+>
+Profile Engine
+</text>
+
+
+</svg>

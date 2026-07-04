@@ -1,0 +1,42 @@
+title: "Professional Journey"
+
+subtitle: "Key milestones"
+
+timeline:
+  - year: "2021"
+    title: "SAP Commerce Backend Developer"
+    organization: "Claro Brasil"
+
+    description: >
+      Working on backend solutions using SAP Commerce Cloud.
+
+    highlights:
+      - "Java"
+      - "SAP Commerce"
+      - "Spring"
+
+  - year: "2024"
+    title: "Founder"
+    organization: "Teo Logic"
+
+    description: >
+      Building products focused on operational clarity.
+
+    highlights:
+      - "Architecture"
+      - "Automation"
+      - "TypeScript"
+
+  - year: "2026"
+    title: "Profile Engine"
+
+    organization: "Open Source"
+
+    description: >
+      Developing a static engine that generates beautiful
+      GitHub profile READMEs.
+
+    highlights:
+      - "Markdown"
+      - "SVG"
+      - "Developer Experience"

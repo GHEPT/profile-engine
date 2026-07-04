@@ -1,0 +1,84 @@
+name: "Eduardo Teodoro"
+
+headline: "Software Engineer | SAP Commerce Cloud | Backend Java"
+
+tagline: "Building software with clarity."
+
+photo: "assets/profile.png"
+
+roles:
+  - "Backend Engineer"
+  - "Software Architect"
+  - "Technical Consultant"
+
+about:
+  title: "About Me"
+
+  intro: >
+    Passionate about software architecture, backend engineering,
+    automation and building maintainable systems.
+
+  items:
+    - icon: "💡"
+      text: "I enjoy solving complex technical problems."
+
+    - icon: "⚙️"
+      text: "I design systems focused on simplicity and maintainability."
+
+    - icon: "🚀"
+      text: "I like creating reusable software."
+
+currentFocus:
+  title: "Currently"
+
+  items:
+    - "SAP Commerce Cloud"
+    - "Java"
+    - "TypeScript"
+    - "GitHub Profile Engine"
+
+technicalExpertise:
+  languages:
+    title: "Languages"
+
+    items:
+      - "Java"
+      - "TypeScript"
+      - "SQL"
+
+  backend:
+    title: "Backend"
+
+    items:
+      - "Spring"
+      - "SAP Commerce"
+      - "REST APIs"
+
+  data:
+    title: "Data"
+
+    items:
+      - "MySQL"
+      - "PostgreSQL"
+
+  practices:
+    title: "Practices"
+
+    items:
+      - "Clean Code"
+      - "DDD"
+      - "SOLID"
+
+building:
+  title: "Building"
+
+  description: "Profile Engine v2"
+
+contact:
+  email: "eduardo@teologic.com.br"
+  website: "https://teologic.com.br"
+  linkedin: "https://linkedin.com/in/epteodoro"
+  github: "https://github.com/GHEPT"
+  location: "Brazil"
+
+quote: "Clarity creates better software."
