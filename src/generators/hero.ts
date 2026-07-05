@@ -17,22 +17,7 @@ export function generateHero(
 
     const hero = new Hero({
         name: profile.name,
-
-        headline: profile.headline,
-
-        tagline: profile.tagline,
-
-        image: relativeHeroImage(),
-
-        quote: profile.quote,
-
-        currentFocusTitle: profile.currentFocus.title,
-
-        currentFocus: profile.currentFocus.items,
-
-        buildingTitle: profile.building.title,
-
-        buildingDescription: profile.building.description
+        image: relativeHeroImage()
     });
 
     return hero.render();

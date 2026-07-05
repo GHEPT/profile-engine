@@ -1,17 +1,17 @@
+import fs from "node:fs";
+import path from "node:path";
+
+import { Paths } from "../constants/Paths";
+
 import type { RuntimeProfile } from "../types/Profile";
 
 const WIDTH = 1200;
-const HEIGHT = 320;
-
-const PADDING_X = 64;
-const PADDING_Y = 56;
+const HEIGHT = 520;
 
 export function generateHeroSvg(
     profile: RuntimeProfile
 ): string {
-    const headlineY = PADDING_Y + 42;
-    const titleY = headlineY + 48;
-    const taglineY = titleY + 42;
+    const photo = loadPhoto(profile.photo);
 
     return `
 <svg
@@ -22,7 +22,6 @@ export function generateHeroSvg(
     role="img"
     aria-labelledby="title description"
 >
-
     <title id="title">${escape(profile.name)}</title>
 
     <desc id="description">
@@ -30,7 +29,6 @@ export function generateHeroSvg(
     </desc>
 
     <defs>
-
         <linearGradient
             id="background"
             x1="0%"
@@ -38,138 +36,282 @@ export function generateHeroSvg(
             x2="100%"
             y2="100%"
         >
-            <stop offset="0%" stop-color="#0F172A"/>
+            <stop
+                offset="0%"
+                stop-color="#0B1020"
+            />
 
-            <stop offset="100%" stop-color="#111827"/>
+            <stop
+                offset="55%"
+                stop-color="#111A35"
+            />
 
+            <stop
+                offset="100%"
+                stop-color="#172554"
+            />
         </linearGradient>
 
-        <linearGradient
-            id="accent"
-            x1="0%"
-            y1="0%"
-            x2="100%"
-            y2="0%"
+        <radialGradient
+            id="glow"
+            cx="82%"
+            cy="45%"
+            r="55%"
         >
-            <stop offset="0%" stop-color="#38BDF8"/>
+            <stop
+                offset="0%"
+                stop-color="#3B82F6"
+                stop-opacity="0.20"
+            />
 
-            <stop offset="100%" stop-color="#22C55E"/>
-        </linearGradient>
+            <stop
+                offset="100%"
+                stop-color="#3B82F6"
+                stop-opacity="0"
+            />
+        </radialGradient>
 
+        <clipPath id="photoClip">
+            <circle
+                cx="945"
+                cy="245"
+                r="145"
+            />
+        </clipPath>
+
+        <filter
+            id="photoShadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="160%"
+        >
+            <feDropShadow
+                dx="0"
+                dy="18"
+                stdDeviation="24"
+                flood-color="#000000"
+                flood-opacity="0.45"
+            />
+        </filter>
     </defs>
 
     <rect
         width="${WIDTH}"
         height="${HEIGHT}"
-        rx="28"
+        rx="24"
         fill="url(#background)"
     />
 
     <rect
-        x="36"
-        y="36"
-        width="8"
-        height="${HEIGHT - 72}"
-        rx="4"
-        fill="url(#accent)"
+        width="${WIDTH}"
+        height="${HEIGHT}"
+        rx="24"
+        fill="url(#glow)"
     />
 
-    <text
-        x="${PADDING_X}"
-        y="${headlineY}"
-        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-        font-size="18"
-        font-weight="600"
-        fill="#38BDF8"
-    >
-        SOFTWARE ENGINEER • BACKEND • AUTOMATION
-    </text>
+    <g transform="translate(72, 78)">
+        <text
+            x="0"
+            y="0"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="700"
+            letter-spacing="3"
+            fill="#60A5FA"
+        >
+            SOFTWARE ENGINEER • BACKEND • ARCHITECTURE
+        </text>
 
-    <text
-        x="${PADDING_X}"
-        y="${titleY}"
-        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-        font-size="40"
-        font-weight="700"
-        fill="#FFFFFF"
-    >
-        ${escape(profile.name)}
-    </text>
+        <text
+            x="0"
+            y="76"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="58"
+            font-weight="800"
+            fill="#FFFFFF"
+        >
+            ${escape(profile.name)}
+        </text>
 
-    <text
-        x="${PADDING_X}"
-        y="${taglineY}"
-        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-        font-size="22"
-        fill="#CBD5E1"
-    >
-        ${escape(profile.headline)}
-    </text>
+        <text
+            x="0"
+            y="126"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="23"
+            font-weight="500"
+            fill="#CBD5E1"
+        >
+            ${escape(profile.headline)}
+        </text>
 
-    ${renderMultiline(
-        profile.tagline,
-        PADDING_X,
-        taglineY + 38,
-        18,
-        "#94A3B8"
-    )}
+        ${renderRoles(profile.roles)}
 
-    <g transform="translate(840,52)">
+        <line
+            x1="0"
+            y1="238"
+            x2="610"
+            y2="238"
+            stroke="#FFFFFF"
+            stroke-opacity="0.12"
+        />
 
-        <rect
-            width="300"
-            height="216"
-            rx="18"
-            fill="#FFFFFF08"
-            stroke="#FFFFFF12"
+        ${renderMultiline(
+            profile.tagline,
+            0,
+            286,
+            21,
+            "#94A3B8",
+            52
+        )}
+
+        <text
+            x="0"
+            y="365"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="18"
+            font-style="italic"
+            fill="#60A5FA"
+        >
+            “${escape(profile.quote)}”
+        </text>
+    </g>
+
+    ${renderPhoto(photo)}
+
+    <g transform="translate(820, 420)">
+        <circle
+            cx="0"
+            cy="0"
+            r="5"
+            fill="#22C55E"
         />
 
         <text
-            x="28"
-            y="42"
-            font-family="Inter, Segoe UI"
+            x="16"
+            y="6"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
             font-size="16"
-            font-weight="700"
-            fill="#FFFFFF"
+            font-weight="600"
+            fill="#CBD5E1"
         >
-            CURRENT FOCUS
+            ${escape(profile.building.description)}
         </text>
-
-        ${renderFocus(profile.currentFocus.items)}
-
     </g>
-
 </svg>
 `.trim();
 }
 
-function renderFocus(
-    items: string[]
+function renderRoles(
+    roles: string[]
 ): string {
-    return items
-        .map((item, index) => {
-            const y = 74 + index * 34;
+    let x = 0;
 
-            return `
-<circle
-    cx="20"
-    cy="${y - 6}"
-    r="4"
-    fill="#38BDF8"
-/>
+    return roles
+        .map((role) => {
+            const width = Math.max(
+                112,
+                role.length * 9 + 32
+            );
 
-<text
-    x="34"
-    y="${y}"
-    font-family="Inter, Segoe UI"
-    font-size="15"
-    fill="#E2E8F0"
->
-    ${escape(item)}
-</text>
+            const element = `
+<g transform="translate(${x}, 158)">
+    <rect
+        width="${width}"
+        height="38"
+        rx="19"
+        fill="#FFFFFF"
+        fill-opacity="0.06"
+        stroke="#FFFFFF"
+        stroke-opacity="0.12"
+    />
+
+    <text
+        x="${width / 2}"
+        y="25"
+        text-anchor="middle"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="14"
+        font-weight="600"
+        fill="#E2E8F0"
+    >
+        ${escape(role)}
+    </text>
+</g>
 `;
+
+            x += width + 12;
+
+            return element;
         })
         .join("");
+}
+
+function renderPhoto(
+    photo: string | null
+): string {
+    if (!photo) {
+        return "";
+    }
+
+    return `
+<g filter="url(#photoShadow)">
+    <circle
+        cx="945"
+        cy="245"
+        r="154"
+        fill="#60A5FA"
+        fill-opacity="0.14"
+        stroke="#60A5FA"
+        stroke-opacity="0.55"
+        stroke-width="2"
+    />
+
+    <image
+        href="${photo}"
+        x="800"
+        y="100"
+        width="290"
+        height="290"
+        preserveAspectRatio="xMidYMid slice"
+        clip-path="url(#photoClip)"
+
+    />
+</g>
+`;
+}
+
+function loadPhoto(
+    photo?: string
+): string | null {
+    if (!photo) {
+        return null;
+    }
+
+    const absolutePath = path.resolve(
+        Paths.root,
+        photo
+    );
+
+    if (!fs.existsSync(absolutePath)) {
+        return null;
+    }
+
+    const extension = path
+        .extname(absolutePath)
+        .toLowerCase();
+
+    const mimeType =
+        extension === ".jpg" ||
+        extension === ".jpeg"
+            ? "image/jpeg"
+            : "image/png";
+
+    const base64 = fs
+        .readFileSync(absolutePath)
+        .toString("base64");
+
+    return `data:${mimeType};base64,${base64}`;
 }
 
 function renderMultiline(
@@ -177,19 +319,22 @@ function renderMultiline(
     x: number,
     startY: number,
     fontSize: number,
-    color: string
+    color: string,
+    maxLength: number
 ): string {
-    const lines = wrap(text, 58);
+    const lines = wrap(text, maxLength);
 
     return lines
         .map((line, index) => {
-            const y = startY + index * (fontSize + 10);
+            const y =
+                startY +
+                index * (fontSize + 10);
 
             return `
 <text
     x="${x}"
     y="${y}"
-    font-family="Inter, Segoe UI"
+    font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
     font-size="${fontSize}"
     fill="${color}"
 >
@@ -210,12 +355,17 @@ function wrap(
     let current = "";
 
     for (const word of words) {
-        if ((current + " " + word).trim().length <= max) {
-            current = `${current} ${word}`.trim();
+        const candidate =
+            `${current} ${word}`.trim();
+
+        if (candidate.length <= max) {
+            current = candidate;
             continue;
         }
 
-        lines.push(current);
+        if (current) {
+            lines.push(current);
+        }
 
         current = word;
     }
