@@ -31,6 +31,24 @@
     stroke-width="3"
 />
 
+<line
+    x1="450"
+    y1="90"
+    x2="630"
+    y2="90"
+    stroke="#475569"
+    stroke-width="3"
+/>
+
+<line
+    x1="630"
+    y1="90"
+    x2="810"
+    y2="90"
+    stroke="#475569"
+    stroke-width="3"
+/>
+
 
 
 <circle
@@ -47,7 +65,7 @@
     font-size="14"
     fill="#FFFFFF"
 >
-2021
+2003 – 2015
 </text>
 
 <text
@@ -58,7 +76,7 @@
     font-weight="700"
     fill="#E2E8F0"
 >
-SAP Commerce Backend Developer
+1. Administration
 </text>
 
 <circle
@@ -75,7 +93,7 @@ SAP Commerce Backend Developer
     font-size="14"
     fill="#FFFFFF"
 >
-2024
+2016
 </text>
 
 <text
@@ -86,7 +104,7 @@ SAP Commerce Backend Developer
     font-weight="700"
     fill="#E2E8F0"
 >
-Founder
+2. The Turning Point
 </text>
 
 <circle
@@ -103,7 +121,7 @@ Founder
     font-size="14"
     fill="#FFFFFF"
 >
-2026
+2017 – 2020
 </text>
 
 <text
@@ -114,7 +132,63 @@ Founder
     font-weight="700"
     fill="#E2E8F0"
 >
-Profile Engine
+3. Deep Dive
+</text>
+
+<circle
+    cx="630"
+    cy="90"
+    r="10"
+    fill="#38BDF8"
+/>
+
+<text
+    x="630"
+    y="60"
+    text-anchor="middle"
+    font-size="14"
+    fill="#FFFFFF"
+>
+2021 – 2023
+</text>
+
+<text
+    x="630"
+    y="125"
+    text-anchor="middle"
+    font-size="15"
+    font-weight="700"
+    fill="#E2E8F0"
+>
+4. Growth &amp; Building
+</text>
+
+<circle
+    cx="810"
+    cy="90"
+    r="10"
+    fill="#38BDF8"
+/>
+
+<text
+    x="810"
+    y="60"
+    text-anchor="middle"
+    font-size="14"
+    fill="#FFFFFF"
+>
+2024+
+</text>
+
+<text
+    x="810"
+    y="125"
+    text-anchor="middle"
+    font-size="15"
+    font-weight="700"
+    fill="#E2E8F0"
+>
+5. Impact
 </text>
 
 

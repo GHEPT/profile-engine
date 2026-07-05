@@ -1,8 +1,8 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1200"
-    height="830"
-    viewBox="0 0 1200 830"
+    height="1330"
+    viewBox="0 0 1200 1330"
     role="img"
     aria-labelledby="profile-title profile-description"
 >
@@ -28,7 +28,7 @@
 
     <rect
         width="1200"
-        height="830"
+        height="1330"
         rx="24"
         fill="url(#profileBackground)"
     />
@@ -465,5 +465,652 @@
         stroke="#94A3B8"
         stroke-opacity="0.16"
     />
+    </g>
+
+    <g transform="translate(0, 830)">
+        <rect
+        x="24"
+        y="28"
+        width="4"
+        height="36"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="48"
+        y="57"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="27"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        My Journey / Purpose
+    </text>
+
+    
+    <text
+        x="48"
+        y="94"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#CBD5E1"
+    >
+        From business to technology. From knowledge to impact.
+    </text>
+    
+
+    
+    
+
+    <g transform="translate(48, 155)">
+        
+        <rect
+            x="3"
+            y="-10"
+            width="30"
+            height="22"
+            rx="3"
+            fill="none"
+            stroke="#3B82F6"
+            stroke-width="3"
+        />
+        <path
+            d="M11 -10 V-16 H25 V-10"
+            fill="none"
+            stroke="#3B82F6"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        <path
+            d="M3 -2 H33"
+            fill="none"
+            stroke="#3B82F6"
+            stroke-width="3"
+        />
+        
+
+        <text
+            x="0"
+            y="52"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="600"
+            fill="#3B82F6"
+        >
+            1. Administration
+        </text>
+
+        
+        <text
+            x="0"
+            y="86"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            My foundation.
+        </text>
+        
+        <text
+            x="0"
+            y="111"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            Understanding
+        </text>
+        
+        <text
+            x="0"
+            y="136"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            business, people and
+        </text>
+        
+        <text
+            x="0"
+            y="161"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            processes.
+        </text>
+        
+    </g>
+
+    <text
+        x="48"
+        y="465"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        2003 – 2015
+    </text>
+
+    
+    <line
+        x1="246"
+        y1="150"
+        x2="246"
+        y2="410"
+        stroke="#334155"
+        stroke-opacity="0.55"
+        stroke-dasharray="2 4"
+    />
+    
+
+    <g transform="translate(266, 155)">
+        
+        <path
+            d="M2 5 H9 L14 -9 L21 14 L27 -3 H36"
+            fill="none"
+            stroke="#3B82F6"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        
+
+        <text
+            x="0"
+            y="52"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="600"
+            fill="#3B82F6"
+        >
+            2. The Turning Point
+        </text>
+
+        
+        <text
+            x="0"
+            y="86"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            I discovered
+        </text>
+        
+        <text
+            x="0"
+            y="111"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            development and
+        </text>
+        
+        <text
+            x="0"
+            y="136"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            everything changed.
+        </text>
+        
+    </g>
+
+    <text
+        x="266"
+        y="465"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        2016
+    </text>
+
+    
+    <line
+        x1="464"
+        y1="150"
+        x2="464"
+        y2="410"
+        stroke="#334155"
+        stroke-opacity="0.55"
+        stroke-dasharray="2 4"
+    />
+    
+
+    <g transform="translate(484, 155)">
+        
+        <path
+            d="M12 -12 L2 0 L12 12"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        <path
+            d="M24 -12 L34 0 L24 12"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        <path
+            d="M21 -16 L15 16"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+        
+
+        <text
+            x="0"
+            y="52"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="600"
+            fill="#8B5CF6"
+        >
+            3. Deep Dive
+        </text>
+
+        
+        <text
+            x="0"
+            y="86"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            Immersion in code,
+        </text>
+        
+        <text
+            x="0"
+            y="111"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            systems and
+        </text>
+        
+        <text
+            x="0"
+            y="136"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            challenges. Learning,
+        </text>
+        
+        <text
+            x="0"
+            y="161"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            building and
+        </text>
+        
+        <text
+            x="0"
+            y="186"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            delivering.
+        </text>
+        
+    </g>
+
+    <text
+        x="484"
+        y="465"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        2017 – 2020
+    </text>
+
+    
+    <line
+        x1="682"
+        y1="150"
+        x2="682"
+        y2="410"
+        stroke="#334155"
+        stroke-opacity="0.55"
+        stroke-dasharray="2 4"
+    />
+    
+
+    <g transform="translate(702, 155)">
+        
+        <path
+            d="M12 8 C18 5 27 -4 30 -15 C19 -14 10 -5 7 1 Z"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="3"
+            stroke-linejoin="round"
+        />
+        <circle
+            cx="22"
+            cy="-7"
+            r="3"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="2"
+        />
+        <path
+            d="M8 3 L2 9 M14 9 L9 15 M5 12 L1 16"
+            fill="none"
+            stroke="#8B5CF6"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+        
+
+        <text
+            x="0"
+            y="52"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="600"
+            fill="#8B5CF6"
+        >
+            4. Growth &amp; Building
+        </text>
+
+        
+        <text
+            x="0"
+            y="86"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            Leading projects,
+        </text>
+        
+        <text
+            x="0"
+            y="111"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            architecting solutions
+        </text>
+        
+        <text
+            x="0"
+            y="136"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            and turning ideas into
+        </text>
+        
+        <text
+            x="0"
+            y="161"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            real products.
+        </text>
+        
+    </g>
+
+    <text
+        x="702"
+        y="465"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        2021 – 2023
+    </text>
+
+    
+    <line
+        x1="900"
+        y1="150"
+        x2="900"
+        y2="410"
+        stroke="#334155"
+        stroke-opacity="0.55"
+        stroke-dasharray="2 4"
+    />
+    
+
+    <g transform="translate(1015, 225)">
+        
+        <circle
+            cx="18"
+            cy="0"
+            r="15"
+            fill="none"
+            stroke="#A855F7"
+            stroke-width="3"
+        />
+        <circle
+            cx="18"
+            cy="0"
+            r="7"
+            fill="none"
+            stroke="#A855F7"
+            stroke-width="3"
+        />
+        <path
+            d="M27 -10 L37 -20 M31 -20 H37 V-14"
+            fill="none"
+            stroke="#A855F7"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+        
+
+        <text
+            x="0"
+            y="52"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="600"
+            fill="#A855F7"
+        >
+            5. Impact
+        </text>
+
+        
+        <text
+            x="0"
+            y="86"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            Building solutions
+        </text>
+        
+        <text
+            x="0"
+            y="111"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            that generate clarity,
+        </text>
+        
+        <text
+            x="0"
+            y="136"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            automate, scale and
+        </text>
+        
+        <text
+            x="0"
+            y="161"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            text-anchor="start"
+            fill="#CBD5E1"
+        >
+            transform.
+        </text>
+        
+    </g>
+
+    <text
+        x="920"
+        y="465"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        2024+
+    </text>
+
+
+    
+    <defs>
+        <linearGradient
+            id="journeyCurveGradient"
+            x1="0%"
+            y1="100%"
+            x2="100%"
+            y2="0%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#0EA5E9"
+            />
+
+            <stop
+                offset="55%"
+                stop-color="#3B82F6"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#A855F7"
+            />
+        </linearGradient>
+
+        <marker
+            id="journeyArrow"
+            markerWidth="5"
+            markerHeight="5"
+            refX="4.5"
+            refY="2.5"
+            orient="auto"
+            markerUnits="strokeWidth"
+        >
+            <path
+                d="M0,0 L5,2.5 L0,5 Z"
+                fill="#A855F7"
+            />
+        </marker>
+    </defs>
+
+    <line
+        x1="48"
+        y1="430"
+        x2="1152"
+        y2="430"
+        stroke="#334155"
+        stroke-width="2"
+    />
+
+    <path
+        d="
+            M 48 430
+            C 260 430, 390 430, 484 424
+            C 610 416, 700 398, 770 365
+            C 875 316, 960 230, 1040 118
+        "
+        fill="none"
+        stroke="url(#journeyCurveGradient)"
+        stroke-width="7"
+        stroke-linecap="round"
+        marker-end="url(#journeyArrow)"
+    />
+
+    
+        <circle
+            cx="48"
+            cy="430"
+            r="7"
+            fill="#3B82F6"
+        />
+        
+        <circle
+            cx="266"
+            cy="430"
+            r="7"
+            fill="#3B82F6"
+        />
+        
+        <circle
+            cx="484"
+            cy="430"
+            r="7"
+            fill="#8B5CF6"
+        />
+        
+        <circle
+            cx="702"
+            cy="430"
+            r="7"
+            fill="#8B5CF6"
+        />
+        
+        <circle
+            cx="920"
+            cy="430"
+            r="7"
+            fill="#A855F7"
+        />
     </g>
 </svg>

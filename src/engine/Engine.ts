@@ -37,7 +37,10 @@ export class Engine {
         const sections: string[] = [];
 
         if (config.svg.profile.enabled) {
-            const profileSvg = generateProfileSvg(profile);
+            const profileSvg = generateProfileSvg(
+                profile,
+                journey
+            );
 
             writeFile(
                 `${Paths.generated}/profile.svg`,

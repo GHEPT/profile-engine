@@ -10,14 +10,23 @@ import {
     renderAboutSvgContent
 } from "./aboutSvg";
 
+import {
+    JOURNEY_HEIGHT,
+    renderJourneySvgContent
+} from "./journeySvg";
+
+import type { Journey } from "../types/Journey";
+
 const WIDTH = 1200;
 
 export function generateProfileSvg(
-    profile: RuntimeProfile
+    profile: RuntimeProfile,
+    journey: Journey
 ): string {
     const height =
         HERO_HEIGHT +
-        ABOUT_HEIGHT;
+        ABOUT_HEIGHT +
+        JOURNEY_HEIGHT;
 
     return `
 <svg
@@ -59,6 +68,10 @@ export function generateProfileSvg(
 
     <g transform="translate(0, ${HERO_HEIGHT})">
         ${renderAboutSvgContent(profile, false)}
+    </g>
+
+    <g transform="translate(0, ${HERO_HEIGHT + ABOUT_HEIGHT})">
+        ${renderJourneySvgContent(journey)}
     </g>
 </svg>
 `.trim();

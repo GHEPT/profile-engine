@@ -1,42 +1,49 @@
-title: "Professional Journey"
+title: "My Journey / Purpose"
 
-subtitle: "Key milestones"
+subtitle: "From business to technology. From knowledge to impact."
 
 timeline:
-  - year: "2021"
-    title: "SAP Commerce Backend Developer"
-    organization: "Claro Brasil"
+  - year: "2003 – 2015"
+    title: "1. Administration"
+    organization: "Foundation"
 
     description: >
-      Working on backend solutions using SAP Commerce Cloud.
+      My foundation. Understanding business, people and processes.
 
-    highlights:
-      - "Java"
-      - "SAP Commerce"
-      - "Spring"
+    highlights: []
 
-  - year: "2024"
-    title: "Founder"
-    organization: "Teo Logic"
+  - year: "2016"
+    title: "2. The Turning Point"
+    organization: "Transition"
 
     description: >
-      Building products focused on operational clarity.
+      I discovered development and everything changed.
 
-    highlights:
-      - "Architecture"
-      - "Automation"
-      - "TypeScript"
+    highlights: []
 
-  - year: "2026"
-    title: "Profile Engine"
-
-    organization: "Open Source"
+  - year: "2017 – 2020"
+    title: "3. Deep Dive"
+    organization: "Technology"
 
     description: >
-      Developing a static engine that generates beautiful
-      GitHub profile READMEs.
+      Immersion in code, systems and challenges. Learning, building and delivering.
 
-    highlights:
-      - "Markdown"
-      - "SVG"
-      - "Developer Experience"
+    highlights: []
+
+  - year: "2021 – 2023"
+    title: "4. Growth & Building"
+    organization: "Architecture"
+
+    description: >
+      Leading projects, architecting solutions and turning ideas into real products.
+
+    highlights: []
+
+  - year: "2024+"
+    title: "5. Impact"
+    organization: "Purpose"
+
+    description: >
+      Building solutions that generate clarity, automate, scale and transform.
+
+    highlights: []
