@@ -1,7 +1,7 @@
 import type { RuntimeProfile } from "../types/Profile";
 
 const WIDTH = 1200;
-export const ABOUT_HEIGHT = 310;
+export const ABOUT_HEIGHT = 275;
 
 export function generateAboutSvg(
     profile: RuntimeProfile
@@ -41,7 +41,7 @@ export function renderAboutSvgContent(
 
     <rect
         x="24"
-        y="28"
+        y="-7"
         width="4"
         height="36"
         rx="2"
@@ -50,7 +50,7 @@ export function renderAboutSvgContent(
 
     <text
         x="48"
-        y="57"
+        y="22"
         font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
         font-size="27"
         font-weight="700"
@@ -71,9 +71,9 @@ export function renderAboutSvgContent(
 
     <line
         x1="24"
-        y1="294"
+        y1="259"
         x2="1176"
-        y2="294"
+        y2="259"
         stroke="#94A3B8"
         stroke-opacity="0.16"
     />
@@ -85,7 +85,7 @@ function renderItem(
     text: string,
     index: number
 ): string {
-    const y = 104 + index * 48;
+    const y = 69 + index * 48;
 
     return `
 <g transform="translate(40, ${y})">

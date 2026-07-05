@@ -1,15 +1,15 @@
 name: "Eduardo Teodoro"
 
-headline: "Software Engineer | SAP Commerce Cloud | Backend Java"
+headline: "I build products and intelligent systems that help businesses understand themselves, make better decisions and evolve continuously."
 
-tagline: "Building software with clarity."
+tagline: "SOFTWARE ENGINEER • FOUNDER • OPERATIONAL INTELLIGENCE"
 
 photo: "assets/profile.jpg"
 
 roles:
-  - "Backend Engineer"
-  - "Software Architect"
-  - "Technical Consultant"
+  - "Backend Engineering"
+  - "Software Architecture"
+  - "AI & Operational Intelligence"
 
 about:
   title: "Why I Build"
@@ -74,7 +74,7 @@ technicalExpertise:
 building:
   title: "Building"
 
-  description: "Profile Engine v2"
+  description: "Founder @ Teo Logic"
 
 contact:
   email: "eduardo@teologic.com.br"
@@ -83,4 +83,4 @@ contact:
   github: "https://github.com/GHEPT"
   location: "Brazil"
 
-quote: "Clarity creates better software."
+quote: "Businesses evolve as they learn to understand themselves better."

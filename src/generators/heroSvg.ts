@@ -6,7 +6,8 @@ import { Paths } from "../constants/Paths";
 import type { RuntimeProfile } from "../types/Profile";
 
 const WIDTH = 1200;
-export const HERO_HEIGHT = 520;
+
+export const HERO_HEIGHT = 440;
 
 export function generateHeroSvg(
     profile: RuntimeProfile
@@ -81,11 +82,34 @@ export function renderHeroSvgContent(
             />
         </radialGradient>
 
+        <linearGradient
+            id="photoBorderGradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+        >
+            <stop
+                offset="0%"
+                stop-color="#0EA5E9"
+            />
+
+            <stop
+                offset="55%"
+                stop-color="#3B82F6"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#A855F7"
+            />
+        </linearGradient>
+
         <clipPath id="photoClip">
             <circle
-                cx="945"
-                cy="245"
-                r="145"
+                cx="1010"
+                cy="165"
+                r="125"
             />
         </clipPath>
 
@@ -98,10 +122,10 @@ export function renderHeroSvgContent(
         >
             <feDropShadow
                 dx="0"
-                dy="18"
-                stdDeviation="24"
+                dy="12"
+                stdDeviation="20"
                 flood-color="#000000"
-                flood-opacity="0.45"
+                flood-opacity="0.35"
             />
         </filter>
     </defs>
@@ -122,140 +146,216 @@ export function renderHeroSvgContent(
     />
     ` : ""}
 
-    <g transform="translate(72, 78)">
+    <g transform="translate(48, 72)">
         <text
             x="0"
-            y="0"
-            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-            font-size="17"
-            font-weight="700"
-            letter-spacing="3"
-            fill="#60A5FA"
-        >
-            SOFTWARE ENGINEER • BACKEND • ARCHITECTURE
-        </text>
-
-        <text
-            x="0"
-            y="76"
-            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            y="10"
+            font-family="Arial Narrow, Liberation Sans Narrow, Inter, Segoe UI, Helvetica, Arial, sans-serif"
             font-size="58"
-            font-weight="800"
+            font-weight="700"
+            letter-spacing="-1"
             fill="#FFFFFF"
         >
             ${escape(profile.name)}
         </text>
 
-        <text
-            x="0"
-            y="126"
-            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-            font-size="23"
-            font-weight="500"
-            fill="#CBD5E1"
-        >
-            ${escape(profile.headline)}
-        </text>
-
-        ${renderRoles(profile.roles)}
+        ${renderHeadline()}
 
         <line
-            x1="0"
-            y1="238"
-            x2="610"
-            y2="238"
+            x1="-24"
+            y1="218"
+            x2="700"
+            y2="218"
             stroke="#FFFFFF"
-            stroke-opacity="0.12"
+            stroke-opacity="0.14"
         />
 
-        ${renderMultiline(
-            profile.tagline,
-            0,
-            286,
-            21,
-            "#94A3B8",
-            52
-        )}
+        ${renderProfessionalLine()}
 
-        <text
-            x="0"
-            y="365"
-            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-            font-size="18"
-            font-style="italic"
-            fill="#60A5FA"
-        >
-            “${escape(profile.quote)}”
-        </text>
     </g>
 
     ${renderPhoto(photo)}
 
-    <g transform="translate(820, 420)">
-        <circle
-            cx="0"
-            cy="0"
-            r="5"
-            fill="#22C55E"
-        />
-
-        <text
-            x="16"
-            y="6"
-            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-            font-size="16"
-            font-weight="600"
-            fill="#CBD5E1"
-        >
-            ${escape(profile.building.description)}
-        </text>
-    </g>
-`.trim();
-}
-
-function renderRoles(
-    roles: string[]
-): string {
-    let x = 0;
-
-    return roles
-        .map((role) => {
-            const width = Math.max(
-                112,
-                role.length * 9 + 32
-            );
-
-            const element = `
-<g transform="translate(${x}, 158)">
-    <rect
-        width="${width}"
-        height="38"
-        rx="19"
-        fill="#FFFFFF"
-        fill-opacity="0.06"
+    <line
+        x1="24"
+        y1="385"
+        x2="1176"
+        y2="385"
         stroke="#FFFFFF"
         stroke-opacity="0.12"
     />
+`.trim();
+}
+
+function renderHeadline(): string {
+    return `
+    <text
+        x="0"
+        y="92"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="28"
+        font-weight="400"
+        fill="#CBD5E1"
+    >
+        I build
+        <tspan fill="#60A5FA"> products</tspan>
+        and
+        <tspan fill="#60A5FA"> intelligent systems</tspan>
+        that help
+    </text>
 
     <text
-        x="${width / 2}"
-        y="25"
-        text-anchor="middle"
+        x="0"
+        y="132"
         font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-        font-size="14"
-        font-weight="600"
-        fill="#E2E8F0"
+        font-size="28"
+        font-weight="400"
+        fill="#CBD5E1"
     >
-        ${escape(role)}
+        businesses
+        <tspan fill="#60A5FA"> understand themselves</tspan>,
+        make better
     </text>
-</g>
+
+    <text
+        x="0"
+        y="172"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="28"
+        font-weight="400"
+        fill="#CBD5E1"
+    >
+        decisions and
+        <tspan fill="#60A5FA"> evolve continuously</tspan>.
+    </text>
 `;
+}
 
-            x += width + 12;
+function renderProfessionalLine(): string {
+    return `
+    <g transform="translate(0, 264)">
+        ${renderBriefcaseIcon(0, 0)}
 
-            return element;
-        })
-        .join("");
+        <text
+            x="30"
+            y="6"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="500"
+            fill="#CBD5E1"
+        >
+            Software Engineer
+        </text>
+
+        ${renderCubeIcon(205, 0)}
+
+        <text
+            x="237"
+            y="6"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="500"
+            fill="#CBD5E1"
+        >
+            Founder @ Teo Logic
+        </text>
+
+        ${renderTargetIcon(445, 0)}
+
+        <text
+            x="477"
+            y="6"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="17"
+            font-weight="500"
+            fill="#CBD5E1"
+        >
+            Operational Intelligence
+        </text>
+    </g>
+`;
+}
+
+function renderBriefcaseIcon(
+    x: number,
+    y: number
+): string {
+    return `
+    <g
+        transform="translate(${x}, ${y - 10})"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <rect
+            x="1"
+            y="6"
+            width="20"
+            height="14"
+            rx="2"
+        />
+
+        <path d="M7 6V3h8v3" />
+
+        <path d="M1 11h20" />
+    </g>
+`;
+}
+
+function renderCubeIcon(
+    x: number,
+    y: number
+): string {
+    return `
+    <g
+        transform="translate(${x}, ${y - 11})"
+        fill="none"
+        stroke="#6366F1"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M11 1 21 7 11 13 1 7Z" />
+
+        <path d="M1 7v11l10 6 10-6V7" />
+
+        <path d="M11 13v11" />
+    </g>
+`;
+}
+
+function renderTargetIcon(
+    x: number,
+    y: number
+): string {
+    return `
+    <g
+        transform="translate(${x}, ${y - 11})"
+        fill="none"
+        stroke="#8B5CF6"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <circle
+            cx="11"
+            cy="13"
+            r="9"
+        />
+
+        <circle
+            cx="11"
+            cy="13"
+            r="4"
+        />
+
+        <path d="M15 9 22 2" />
+
+        <path d="M17 2h5v5" />
+    </g>
+`;
 }
 
 function renderPhoto(
@@ -268,25 +368,22 @@ function renderPhoto(
     return `
 <g filter="url(#photoShadow)">
     <circle
-        cx="945"
-        cy="245"
-        r="154"
-        fill="#60A5FA"
-        fill-opacity="0.14"
-        stroke="#60A5FA"
-        stroke-opacity="0.55"
+        cx="1010"
+        cy="165"
+        r="128"
+        fill="none"
+        stroke="url(#photoBorderGradient)"
         stroke-width="2"
     />
 
     <image
         href="${photo}"
-        x="800"
-        y="100"
-        width="290"
-        height="290"
+        x="885"
+        y="40"
+        width="250"
+        height="250"
         preserveAspectRatio="xMidYMid slice"
         clip-path="url(#photoClip)"
-
     />
 </g>
 `;
@@ -323,69 +420,6 @@ function loadPhoto(
         .toString("base64");
 
     return `data:${mimeType};base64,${base64}`;
-}
-
-function renderMultiline(
-    text: string,
-    x: number,
-    startY: number,
-    fontSize: number,
-    color: string,
-    maxLength: number
-): string {
-    const lines = wrap(text, maxLength);
-
-    return lines
-        .map((line, index) => {
-            const y =
-                startY +
-                index * (fontSize + 10);
-
-            return `
-<text
-    x="${x}"
-    y="${y}"
-    font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
-    font-size="${fontSize}"
-    fill="${color}"
->
-    ${escape(line)}
-</text>`;
-        })
-        .join("");
-}
-
-function wrap(
-    text: string,
-    max: number
-): string[] {
-    const words = text.split(/\s+/);
-
-    const lines: string[] = [];
-
-    let current = "";
-
-    for (const word of words) {
-        const candidate =
-            `${current} ${word}`.trim();
-
-        if (candidate.length <= max) {
-            current = candidate;
-            continue;
-        }
-
-        if (current) {
-            lines.push(current);
-        }
-
-        current = word;
-    }
-
-    if (current) {
-        lines.push(current);
-    }
-
-    return lines;
 }
 
 function escape(
