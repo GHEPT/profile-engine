@@ -1,0 +1,196 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="310"
+    viewBox="0 0 1200 310"
+    role="img"
+    aria-labelledby="about-title about-description"
+>
+    <title id="about-title">Why I Build</title>
+
+    <desc id="about-description">
+        For me, technology makes sense when it brings clarity to complexity.
+
+    </desc>
+
+    <rect
+        width="1200"
+        height="310"
+        fill="#07111F"
+    />
+
+    <rect
+        x="24"
+        y="28"
+        width="4"
+        height="36"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="48"
+        y="57"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="27"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        Why I Build
+    </text>
+
+    
+<g transform="translate(40, 104)">
+    
+<circle
+    cx="18"
+    cy="0"
+    r="14"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="3"
+/>
+<circle
+    cx="18"
+    cy="0"
+    r="6"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="3"
+/>
+<path
+    d="M27 -10 L37 -20 M31 -20 H37 V-14"
+    fill="none"
+    stroke="#8B5CF6"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+/>
+
+
+    <text
+        x="64"
+        y="8"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#CBD5E1"
+    >
+        For me, technology makes sense when it brings clarity to complexity.
+    </text>
+</g>
+
+<g transform="translate(40, 152)">
+    
+<path
+    d="M18 -16 L34 -7 L34 11 L18 20 L2 11 L2 -7 Z"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linejoin="round"
+/>
+<path
+    d="M2 -7 L18 2 L34 -7 M18 2 V20"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linejoin="round"
+/>
+
+
+    <text
+        x="64"
+        y="8"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#CBD5E1"
+    >
+        I build systems and products that solve real problems and create opportunities.
+    </text>
+</g>
+
+<g transform="translate(40, 200)">
+    
+<path
+    d="M2 14 L13 3 L21 10 L36 -7"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+/>
+<path
+    d="M27 -7 H36 V2"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+/>
+
+
+    <text
+        x="64"
+        y="8"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#CBD5E1"
+    >
+        I believe in automation with purpose, data with intelligence and code with impact.
+    </text>
+</g>
+
+<g transform="translate(40, 248)">
+    
+<circle
+    cx="12"
+    cy="-7"
+    r="7"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+/>
+<circle
+    cx="28"
+    cy="-5"
+    r="6"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+/>
+<path
+    d="M0 17 C1 7 6 3 12 3 C19 3 23 8 24 17"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linecap="round"
+/>
+<path
+    d="M25 5 C33 5 38 9 39 17"
+    fill="none"
+    stroke="#6366F1"
+    stroke-width="3"
+    stroke-linecap="round"
+/>
+
+
+    <text
+        x="64"
+        y="8"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#CBD5E1"
+    >
+        My goal is simple: empower people and businesses to grow and make a difference.
+    </text>
+</g>
+
+
+    <line
+        x1="24"
+        y1="294"
+        x2="1176"
+        y2="294"
+        stroke="#94A3B8"
+        stroke-opacity="0.16"
+    />
+</svg>

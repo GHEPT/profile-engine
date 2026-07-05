@@ -2,75 +2,32 @@ import fs from "node:fs";
 
 import { Paths } from "../constants/Paths";
 
-import { renderTemplate } from "../renderers/markdown";
+import { generateAboutSvg } from "./aboutSvg";
 
 import type { RuntimeProfile } from "../types/Profile";
 
 export function generateAbout(
     profile: RuntimeProfile
 ): string {
-    const template = loadTemplate();
+    const svg = generateAboutSvg(profile);
 
-    return renderTemplate(template, {
-        about: {
-            intro: profile.about.intro,
-
-            items: renderAboutItems(profile),
-
-            title: profile.about.title
-        },
-
-        technicalExpertise: {
-            languages: renderSkillGroup(
-                profile.technicalExpertise.languages.items
-            ),
-
-            backend: renderSkillGroup(
-                profile.technicalExpertise.backend.items
-            ),
-
-            data: renderSkillGroup(
-                profile.technicalExpertise.data.items
-            ),
-
-            practices: renderSkillGroup(
-                profile.technicalExpertise.practices.items
-            )
-        },
-
-        building: {
-            title: profile.building.title,
-
-            description: profile.building.description
-        }
+    fs.mkdirSync(Paths.generated, {
+        recursive: true
     });
-}
 
-function loadTemplate(): string {
-    return fs.readFileSync(
-        Paths.readme.about,
+    fs.writeFileSync(
+        `${Paths.generated}/about.svg`,
+        svg,
         "utf8"
     );
-}
 
-function renderAboutItems(
-    profile: RuntimeProfile
-): string {
-    return profile.about.items
-        .map(
-            (item) =>
-                `- ${item.text}`
-        )
-        .join("\n");
-}
-
-function renderSkillGroup(
-    items: string[]
-): string {
-    return items
-        .map(
-            (item) =>
-                `- ${item}`
-        )
-        .join("\n");
+    return `
+<p align="center">
+    <img
+        src="./assets/generated/about.svg"
+        alt="${profile.about.title}"
+        width="100%"
+    />
+</p>
+`.trim();
 }

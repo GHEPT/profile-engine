@@ -12,21 +12,23 @@ roles:
   - "Technical Consultant"
 
 about:
-  title: "About Me"
+  title: "Why I Build"
 
   intro: >
-    Passionate about software architecture, backend engineering,
-    automation and building maintainable systems.
+    For me, technology makes sense when it brings clarity to complexity.
 
   items:
-    - icon: "💡"
-      text: "I enjoy solving complex technical problems."
+    - icon: "target"
+      text: "For me, technology makes sense when it brings clarity to complexity."
 
-    - icon: "⚙️"
-      text: "I design systems focused on simplicity and maintainability."
+    - icon: "cube"
+      text: "I build systems and products that solve real problems and create opportunities."
 
-    - icon: "🚀"
-      text: "I like creating reusable software."
+    - icon: "growth"
+      text: "I believe in automation with purpose, data with intelligence and code with impact."
+
+    - icon: "people"
+      text: "My goal is simple: empower people and businesses to grow and make a difference."
 
 currentFocus:
   title: "Currently"
