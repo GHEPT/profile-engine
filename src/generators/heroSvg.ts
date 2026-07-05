@@ -366,7 +366,7 @@ function renderPhoto(
     }
 
     return `
-<g filter="url(#photoShadow)">
+<g>
     <circle
         cx="1010"
         cy="165"

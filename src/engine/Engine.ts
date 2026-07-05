@@ -39,7 +39,8 @@ export class Engine {
         if (config.svg.profile.enabled) {
             const profileSvg = generateProfileSvg(
                 profile,
-                journey
+                journey,
+                projects
             );
 
             writeFile(

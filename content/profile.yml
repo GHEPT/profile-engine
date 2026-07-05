@@ -31,13 +31,13 @@ about:
       text: "My goal is simple: empower people and businesses to grow and make a difference."
 
 currentFocus:
-  title: "Currently"
+  title: "Current focus"
 
   items:
-    - "SAP Commerce Cloud"
-    - "Java"
-    - "TypeScript"
-    - "GitHub Profile Engine"
+    - "Backend Systems"
+    - "Automation"
+    - "Operational Intelligence"
+    - "Products"
 
 technicalExpertise:
   languages:
@@ -72,15 +72,15 @@ technicalExpertise:
       - "SOLID"
 
 building:
-  title: "Building"
+  title: "What I’m Building"
 
-  description: "Founder @ Teo Logic"
+  description: "I build systems that connect strategy, technology and execution — turning complexity into lasting value."
 
 contact:
   email: "eduardo@teologic.com.br"
   website: "https://teologic.com.br"
   linkedin: "https://linkedin.com/in/epteodoro"
   github: "https://github.com/GHEPT"
-  location: "Brazil"
+  location: "Cosmópolis, SP – Brazil"
 
 quote: "Businesses evolve as they learn to understand themselves better."

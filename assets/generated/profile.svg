@@ -1,8 +1,8 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1200"
-    height="1215"
-    viewBox="0 0 1200 1215"
+    height="1885"
+    viewBox="0 0 1200 1885"
     role="img"
     aria-labelledby="profile-title profile-description"
 >
@@ -28,7 +28,7 @@
 
     <rect
         width="1200"
-        height="1215"
+        height="1885"
         rx="24"
         fill="url(#profileBackground)"
     />
@@ -297,7 +297,7 @@
     </g>
 
     
-<g filter="url(#photoShadow)">
+<g>
     <circle
         cx="1010"
         cy="165"
@@ -1150,5 +1150,629 @@
             r="7"
             fill="#A855F7"
         />
+    </g>
+
+    <g transform="translate(0, 1215)">
+        <rect
+        x="24"
+        y="28"
+        width="1152"
+        height="330"
+        rx="8"
+        fill="#07111F"
+        fill-opacity="0.24"
+        stroke="#94A3B8"
+        stroke-opacity="0.16"
+    />
+
+    <line
+        x1="400"
+        y1="28"
+        x2="400"
+        y2="358"
+        stroke="#94A3B8"
+        stroke-opacity="0.16"
+    />
+
+    <line
+        x1="800"
+        y1="28"
+        x2="800"
+        y2="358"
+        stroke="#94A3B8"
+        stroke-opacity="0.16"
+    />
+
+    
+    <rect
+        x="48"
+        y="47"
+        width="4"
+        height="28"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="64"
+        y="72"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="23"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        What I’m Building
+    </text>
+
+
+    
+    <rect
+        x="424"
+        y="47"
+        width="4"
+        height="28"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="440"
+        y="72"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="23"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        Technical Expertise
+    </text>
+
+
+    
+    <rect
+        x="824"
+        y="47"
+        width="4"
+        height="28"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="840"
+        y="72"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="23"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        Featured Projects
+    </text>
+
+
+    
+    
+    <text
+        x="48"
+        y="118"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="16"
+        fill="#CBD5E1"
+    >
+        I build systems that connect strategy,
+    </text>
+    <text
+        x="48"
+        y="146"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="16"
+        fill="#CBD5E1"
+    >
+        technology and execution — turning
+    </text>
+    <text
+        x="48"
+        y="174"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="16"
+        fill="#CBD5E1"
+    >
+        complexity into lasting value.
+    </text>
+
+    <line
+        x1="48"
+        y1="218"
+        x2="376"
+        y2="218"
+        stroke="#94A3B8"
+        stroke-opacity="0.16"
+    />
+
+    <text
+        x="48"
+        y="252"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="15"
+        fill="#60A5FA"
+    >
+        Current focus
+    </text>
+
+    
+    <rect
+        x="48"
+        y="270"
+        width="152"
+        height="32"
+        rx="6"
+        fill="#111827"
+        stroke="#334155"
+        stroke-opacity="0.70"
+    />
+
+    <text
+        x="58"
+        y="291"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Backend Systems
+    </text>
+
+    <rect
+        x="212"
+        y="270"
+        width="152"
+        height="32"
+        rx="6"
+        fill="#111827"
+        stroke="#334155"
+        stroke-opacity="0.70"
+    />
+
+    <text
+        x="222"
+        y="291"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Automation
+    </text>
+
+    <rect
+        x="48"
+        y="312"
+        width="152"
+        height="32"
+        rx="6"
+        fill="#111827"
+        stroke="#334155"
+        stroke-opacity="0.70"
+    />
+
+    <text
+        x="58"
+        y="333"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Operational Intelligence
+    </text>
+
+    <rect
+        x="212"
+        y="312"
+        width="152"
+        height="32"
+        rx="6"
+        fill="#111827"
+        stroke="#334155"
+        stroke-opacity="0.70"
+    />
+
+    <text
+        x="222"
+        y="333"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Products
+    </text>
+
+
+
+    
+    <text
+        x="448"
+        y="118"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#60A5FA"
+    >
+        Languages
+    </text>
+
+    <text
+        x="448"
+        y="143"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="15"
+        fill="#CBD5E1"
+    >
+        Java • TypeScript • SQL
+    </text>
+
+    <text
+        x="448"
+        y="180"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#60A5FA"
+    >
+        Backend
+    </text>
+
+    <text
+        x="448"
+        y="205"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="15"
+        fill="#CBD5E1"
+    >
+        Spring • SAP Commerce • REST APIs
+    </text>
+
+    <text
+        x="448"
+        y="242"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#60A5FA"
+    >
+        Data
+    </text>
+
+    <text
+        x="448"
+        y="267"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="15"
+        fill="#CBD5E1"
+    >
+        MySQL • PostgreSQL
+    </text>
+
+    <text
+        x="448"
+        y="304"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#60A5FA"
+    >
+        Practices
+    </text>
+
+    <text
+        x="448"
+        y="329"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="15"
+        fill="#CBD5E1"
+    >
+        Clean Code • DDD • SOLID
+    </text>
+
+
+    
+    <text
+        x="848"
+        y="118"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#8B5CF6"
+    >
+        Profile Engine
+    </text>
+
+    
+    <text
+        x="848"
+        y="142"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Static engine that generates
+    </text>
+    <text
+        x="848"
+        y="160"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        beautiful GitHub profile READMEs
+    </text>
+    <text
+        x="848"
+        y="178"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        from structured YAML content.
+    </text>
+
+    <text
+        x="848"
+        y="230"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        font-weight="600"
+        fill="#8B5CF6"
+    >
+        Teo Logic
+    </text>
+
+    
+    <text
+        x="848"
+        y="254"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        Technology platform focused on
+    </text>
+    <text
+        x="848"
+        y="272"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        helping companies evolve through
+    </text>
+    <text
+        x="848"
+        y="290"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="13"
+        fill="#CBD5E1"
+    >
+        operational clarity.
+    </text>
+    </g>
+
+    <g transform="translate(0, 1605)">
+        <rect
+        x="48"
+        y="38"
+        width="4"
+        height="32"
+        rx="2"
+        fill="#238BFF"
+    />
+
+    <text
+        x="64"
+        y="65"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="25"
+        font-weight="700"
+        fill="#F8FAFC"
+    >
+        Let’s Connect
+    </text>
+
+
+    <text
+        x="48"
+        y="102"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="17"
+        fill="#CBD5E1"
+    >
+        I’m always open to meaningful conversations, new ideas and impactful collaborations.
+    </text>
+
+    
+    <g transform="translate(48, 164)">
+        
+    <rect
+        x="0"
+        y="-20"
+        width="30"
+        height="30"
+        rx="5"
+        fill="none"
+        stroke="#238BFF"
+        stroke-width="2"
+    />
+
+    <text
+        x="15"
+        y="3"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="17"
+        font-weight="700"
+        fill="#238BFF"
+    >
+        in
+    </text>
+
+
+        <text
+            x="44"
+            y="-8"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="15"
+            fill="#94A3B8"
+        >
+            LinkedIn
+        </text>
+
+        <text
+            x="44"
+            y="17"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="14"
+            fill="#F8FAFC"
+        >
+            /epteodoro
+        </text>
+    </g>
+
+
+    
+    <g transform="translate(338, 164)">
+        
+    <rect
+        x="0"
+        y="-18"
+        width="32"
+        height="24"
+        rx="3"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+    />
+
+    <path
+        d="M2 -15 L16 -4 L30 -15"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+        stroke-linejoin="round"
+    />
+
+
+        <text
+            x="44"
+            y="-8"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="15"
+            fill="#94A3B8"
+        >
+            Email
+        </text>
+
+        <text
+            x="44"
+            y="17"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="14"
+            fill="#F8FAFC"
+        >
+            eduardo@teologic.com.br
+        </text>
+    </g>
+
+
+    
+    <g transform="translate(648, 164)">
+        
+    <circle
+        cx="15"
+        cy="-5"
+        r="15"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+    />
+
+    <path
+        d="M0 -5 H30 M15 -20 C9 -15 9 5 15 10 M15 -20 C21 -15 21 5 15 10"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+    />
+
+
+        <text
+            x="44"
+            y="-8"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="15"
+            fill="#94A3B8"
+        >
+            Website
+        </text>
+
+        <text
+            x="44"
+            y="17"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="14"
+            fill="#F8FAFC"
+        >
+            teologic.com.br
+        </text>
+    </g>
+
+
+    
+    <g transform="translate(908, 164)">
+        
+    <path
+        d="M15 -20 C7 -20 1 -14 1 -6 C1 4 15 12 15 12 C15 12 29 4 29 -6 C29 -14 23 -20 15 -20 Z"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+    />
+
+    <circle
+        cx="15"
+        cy="-6"
+        r="4"
+        fill="none"
+        stroke="#3B82F6"
+        stroke-width="2"
+    />
+
+
+        <text
+            x="44"
+            y="-8"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="15"
+            fill="#94A3B8"
+        >
+            Location
+        </text>
+
+        <text
+            x="44"
+            y="17"
+            font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+            font-size="14"
+            fill="#F8FAFC"
+        >
+            Cosmópolis, SP – Brazil
+        </text>
+    </g>
+
+
+    <text
+        x="600"
+        y="252"
+        text-anchor="middle"
+        font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="18"
+        font-style="italic"
+        fill="#CBD5E1"
+    >
+        “Clarity is the foundation. Systems are the path. Impact is the destination.”
+    </text>
     </g>
 </svg>
