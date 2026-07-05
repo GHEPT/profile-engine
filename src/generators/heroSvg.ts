@@ -6,19 +6,17 @@ import { Paths } from "../constants/Paths";
 import type { RuntimeProfile } from "../types/Profile";
 
 const WIDTH = 1200;
-const HEIGHT = 520;
+export const HERO_HEIGHT = 520;
 
 export function generateHeroSvg(
     profile: RuntimeProfile
 ): string {
-    const photo = loadPhoto(profile.photo);
-
     return `
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="${WIDTH}"
-    height="${HEIGHT}"
-    viewBox="0 0 ${WIDTH} ${HEIGHT}"
+    height="${HERO_HEIGHT}"
+    viewBox="0 0 ${WIDTH} ${HERO_HEIGHT}"
     role="img"
     aria-labelledby="title description"
 >
@@ -28,6 +26,18 @@ export function generateHeroSvg(
         ${escape(profile.headline)}
     </desc>
 
+    ${renderHeroSvgContent(profile)}
+</svg>
+`.trim();
+}
+
+export function renderHeroSvgContent(
+    profile: RuntimeProfile,
+    includeBackground = true
+): string {
+    const photo = loadPhoto(profile.photo);
+
+    return `
     <defs>
         <linearGradient
             id="background"
@@ -96,19 +106,21 @@ export function generateHeroSvg(
         </filter>
     </defs>
 
+    ${includeBackground ? `
     <rect
         width="${WIDTH}"
-        height="${HEIGHT}"
+        height="${HERO_HEIGHT}"
         rx="24"
         fill="url(#background)"
     />
 
     <rect
         width="${WIDTH}"
-        height="${HEIGHT}"
+        height="${HERO_HEIGHT}"
         rx="24"
         fill="url(#glow)"
     />
+    ` : ""}
 
     <g transform="translate(72, 78)">
         <text
@@ -198,7 +210,6 @@ export function generateHeroSvg(
             ${escape(profile.building.description)}
         </text>
     </g>
-</svg>
 `.trim();
 }
 

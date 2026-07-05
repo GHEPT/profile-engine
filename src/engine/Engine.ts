@@ -9,10 +9,9 @@ import { loadProfile } from "../loaders/profile";
 import { loadProjects } from "../loaders/projects";
 import { loadSocial } from "../loaders/social";
 
-import { generateAbout } from "../generators/about";
 import { generateFooter } from "../generators/footer";
 import { generateGithub } from "../generators/github";
-import { generateHero } from "../generators/hero";
+import { generateProfileSvg } from "../generators/profileSvg";
 import { generateJourney } from "../generators/journey";
 import { generateProjects } from "../generators/projects";
 import { generateSkills } from "../generators/skills";
@@ -37,15 +36,22 @@ export class Engine {
 
         const sections: string[] = [];
 
-        if (config.features.hero) {
-            sections.push(
-                generateHero(profile, config)
-            );
-        }
+        if (config.svg.profile.enabled) {
+            const profileSvg = generateProfileSvg(profile);
 
-        if (config.features.about) {
+            writeFile(
+                `${Paths.generated}/profile.svg`,
+                profileSvg
+            );
+
             sections.push(
-                generateAbout(profile)
+                `<p align="center">
+    <img
+        src="./assets/generated/profile.svg"
+        alt="${profile.name}"
+        width="100%"
+    />
+</p>`
             );
         }
 

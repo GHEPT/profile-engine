@@ -1,7 +1,7 @@
 import type { RuntimeProfile } from "../types/Profile";
 
 const WIDTH = 1200;
-const HEIGHT = 310;
+export const ABOUT_HEIGHT = 310;
 
 export function generateAboutSvg(
     profile: RuntimeProfile
@@ -10,8 +10,8 @@ export function generateAboutSvg(
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="${WIDTH}"
-    height="${HEIGHT}"
-    viewBox="0 0 ${WIDTH} ${HEIGHT}"
+    height="${ABOUT_HEIGHT}"
+    viewBox="0 0 ${WIDTH} ${ABOUT_HEIGHT}"
     role="img"
     aria-labelledby="about-title about-description"
 >
@@ -21,11 +21,23 @@ export function generateAboutSvg(
         ${escape(profile.about.intro)}
     </desc>
 
+    ${renderAboutSvgContent(profile)}
+</svg>
+`.trim();
+}
+
+export function renderAboutSvgContent(
+    profile: RuntimeProfile,
+    includeBackground = true
+): string {
+    return `
+    ${includeBackground ? `
     <rect
         width="${WIDTH}"
-        height="${HEIGHT}"
+        height="${ABOUT_HEIGHT}"
         fill="#07111F"
     />
+    ` : ""}
 
     <rect
         x="24"
@@ -65,7 +77,6 @@ export function generateAboutSvg(
         stroke="#94A3B8"
         stroke-opacity="0.16"
     />
-</svg>
 `.trim();
 }
 

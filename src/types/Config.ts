@@ -53,6 +53,7 @@ export interface RenderConfig {
 }
 
 export interface SvgConfig {
+    profile: SvgAssetConfig;
     hero: SvgAssetConfig;
     skills: SvgAssetConfig;
     timeline: SvgAssetConfig;

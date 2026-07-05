@@ -32,6 +32,10 @@ render:
   ensureFinalNewline: true
 
 svg:
+  profile:
+    enabled: true
+    output: "assets/generated/profile.svg"
+
   hero:
     enabled: true
     output: "assets/generated/hero.svg"
